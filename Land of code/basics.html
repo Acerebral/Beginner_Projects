@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>21/07/2021</title>
+    <style>
+        .underline {text-decoration: underline;}
+        .adjective {font-weight: bold; font-style: italic;}
+        .flex-display {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: blueviolet;
+            width: fit-content;
+        }
+        .flex-display > div {margin: 10px; background-color: whitesmoke; padding: 5px;}
+        #bottom-page {
+            animation: quickanime 6s ease-in-out 3s 4 alternate;
+        }
+        @keyframes quickanime {
+            0% {color: red; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: large;}
+            25% {color: rgb(154, 205, 50); font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: larger;}
+            75% {color: rgb(38, 50, 117); font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: x-large;}
+            100% {color: hotpink; font-family: 'Lucida Sans', Arial, sans-serif; font-size: xx-large;}
+        }
+    </style>
+</head>
+<body>
+    <a href="#bottom" id="top-page"><strong>Hurry, Go to Bottom</strong></a>
+    <h1>HTML Basic Exercises</h1>
+    <p>
+        <!--Each line in the paragraph has a different font-->
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: 'Times New Roman', Times, serif;">Lorem ipsum dolor sit amet, <del>adipiscing elit</del>.</span> <span style="font-family: Arial, Helvetica, sans-serif;">Nullam fermentum volutpat mauris, interdum ornare ipsum finibus non.</span> <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Curabitur eget malesuada tellus.</span> <span style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Maecenas condimentum accumsan tortor, ut aliquet odio porta in.</span> <span style="font-family: 'Courier New', Courier, monospace;">Nunc in felis efficitur, <ins>convallis nulla id</ins>, pellentesque ante.</span>
+    </p>
+    <h2>Book Descritption</h2>
+    <!--different text formatting styles, i.e, bold, italics, underline-->
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;A <span class="adjective">masterpiece</span> refers to a creation that has been given much <span class="adjective">critical praise</span>, especially one that is considered the <span class="adjective">greatest</span> work of a person's career or to a work of <span class="adjective">outstanding</span> creativity, skill or workmanship. Samples of <span class="adjective">great</span> masterpieces in the world are <span class="underline">God Sees The Truth But Waits</span>  by <span class="underline">Leo Tolstoys</span>, <span class="underline">Oedipus Rex</span> by <span class="underline">Sophocles</span> and <span class="underline">King Lear</span> by <span class="underline">William Shakespear</span>.
+    </p>
+    <p>Go to <a href="https://www.google.com/">Google</a>.</p>
+    <p>This <a href="https://puginarug.com/" target="_blank">link</a> will open in a new window.</p>
+    <h2>Squares of numbers</h2>
+    <pre>
+        1<sup>2</sup> &equals; 1
+        3<sup>2</sup> &equals; 9
+        6<sup>2</sup> &equals; 36
+        10<sup>2</sup> &equals; 100
+        16<sup>2</sup> &equals; 256
+    </pre>
+    <h2>Short Quotes and Long Quotes</h2>
+    <p>One of David Jone's Quotes is <q>Time: The Healer and The Killer.</q></p>
+    <p>
+        And:<blockquote cite="https://www.google.com/">I believe there are no random meetings in our lives - that everyone we touch, who touches us, has been put in our path for a reason. The briefest encounter can open a door, or heal a wound or close a circle that was started long before your birth.</blockquote> Susanna Kearsley
+    </p>
+    <h2>Address On An Envelope</h2>
+    <div style="width: 50%;">
+        <address>
+            Derrick Hensley<br/>
+            1366 Seth Street<br/>
+            P.O.Box 79536
+        </address>
+        <address style="text-align: center;">
+            Lorine C. <br/>
+            3395 Science Center Drive <br/>
+            Boise, ID
+        </address>
+    </div>
+    <h2>Abbreviations and Acronyms</h2>
+    <p>Hover your mouse over them to know what each means:</p>
+    <pre>
+        <abbr title="Before anyone else">BAE</abbr>
+
+        <abbr title="In real life">IRL</abbr>
+
+        <abbr title="For The Win">FTW</abbr>
+        &ast;
+    </pre>
+
+    <hr/>
+    <h2>Random Formatting</h2>
+    <hr/>
+    <p>
+        My name is <span style="color: green; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">John Doe</span>.
+    </p>
+    <pre>
+        <span style="color: tomato;">0, 1, 2,</span> <span style="color: wheat;">3, 4, 5,</span> <span style="color: rebeccapurple;">6, 7, 8, 9</span>.
+        When was this webpage created? Check page's title for the answer.
+    </pre>
+    <div class="flex-display">
+        <div>
+            <h1>Unalphabetized</h1>
+            <p>
+                Oliver<sub>7</sub><br/>Charlotte<sub>2</sub><br/>Declan<sub>3</sub><br/>Aurora<sub>1</sub><br/>Violet<sub>9</sub><br/>Jasper<sub>5</sub><br/>Hazel<sub>4</sub><br/>Silas<sub>8</sub><br/>Luna<sub>6</sub>
+            </p>
+        </div>
+        <div>
+            <h1>Alphabetized</h1>
+            <p>
+                Aurora<sub>1</sub><br/>Charlotte<sub>2</sub><br/>Declan<sub>3</sub><br/>Hazel<sub>4</sub><br/>Jasper<sub>5</sub><br/>Luna<sub>6</sub><br/>Oliver<sub>7</sub><br/>Silas<sub>8</sub><br/>Violet<sub>9</sub>
+            </p>
+        </div>
+        <div>
+            <h1 style="list-style-type: lower-greek;">Ordered List</h1>
+            <ol>
+                <li>Car</li>
+                <li>Boat</li>
+                <li>Airplane</li>
+                <li>Drone</li>
+                <li>Truck</li>
+            </ol>
+        </div>
+        <div>
+            <h1>Unordered List</h1>
+            <ul>
+                <li>Corn</li>
+                <li>Rice</li>
+                <li>Pasta</li>
+                <li>More Pasta</li>
+                <li>Flour</li>
+            </ul>
+        </div>
+        <div>
+            <h1>Definition Lists</h1>
+            <dl>
+                <dt>Knapweed</dt>
+                <dd>The black centaury Cenaturea nigra so called from the knoblike heads of flowers. Called also <em>bullweed</em>.</dd>
+                <dt>Lends</dt>
+                <dd>Loins</dd>
+                <dt>Protagonist</dt>
+                <dd>One who takes the leading part in a drama. Hence one who takes the lead in some great scene.</dd>
+            </dl>
+        </div>
+    </div>
+    <div style="height: 50px;"><p id="bottom-page">You are here.</p></div>
+    
+    <p id="bottom">Go To <a href="#top-page">top</a></p>
+</body>
+</html>
